@@ -1,0 +1,334 @@
+/* Add some styling for the new content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0; /* Added to remove default margin */
+}
+
+header {
+    background-color: #2c3e50; /* Darker background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background-image: url('path/to/header-background-image.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Updated styling for the hero section */
+.hero {
+    background-image: url('../src/technology.jpeg'); /* Add your hero background image path */
+    background-size: cover;
+    color: #fff; /* Keep text color white */
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b; /* Darker color on hover */
+}
+
+/* Updated styling for the features section */
+.features {
+    background-color: #3498db; /* A contrasting color to the hero section */
+    color: #fff;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; /* Set text color to white */
+}
+
+.feature {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #333; /* Set text color to a dark color */
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.2em;
+}
+
+/* Styling for rows */
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Styling for services */
+.service {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-basis: calc(50% - 40px); /* Adjust the width of each service */
+    box-sizing: border-box; /* Added to account for padding */
+}
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1.1em;
+}
+
+/* Additional styling for the blog page */
+.blog-post {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-basis: calc(50% - 40px); /* Adjust the width of each service */
+    box-sizing: border-box; /* Added to account for padding */
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-post h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #2980b9;
+}
+
+/* Additional styling for the about page */
+.about-content {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 15px;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Updated styling for the contact page */
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    background-color: #f1f1f1; /* Light gray background color */
+    color: #333; /* Dark text color */
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Your Chosen Font', sans-serif; /* Add your desired font */
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 1.2em;
+    color: #333; /* Dark text color */
+    font-family: 'Your Chosen Font', sans-serif; /* Add your desired font */
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px;
+    font-family: 'Your Chosen Font', sans-serif; /* Add your desired font */
+}
+
+.contact button {
+    background-color: #3498db; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px; /* Adjusted padding to match input elements */
+    font-size: 1em; /* Adjusted font size to match input elements */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Updated styling for the footer */
+footer {
+    background-color: #2c3e50; /* Darker background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Added hover effect for footer links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12; /* Highlight color on hover */
+}
+
